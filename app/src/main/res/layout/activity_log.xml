@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogActivity"
+    android:background="@drawable/logback">
+
+    <EditText
+        android:id="@+id/al_et0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter login"
+        android:textSize="20sp"
+        android:textColorHint="#808080"
+        android:textColor="#808080"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="180dp"
+        android:minWidth="220dp"
+        android:maxWidth="220dp" />
+
+    <EditText
+        android:id="@+id/al_et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textSize="20sp"
+        android:textColorHint="#808080"
+        android:textColor="#808080"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/al_et0"
+        android:layout_marginTop="50dp"
+        android:minWidth="220dp"
+        android:maxWidth="220dp" />
+
+    <ImageView
+        android:id="@+id/al_iv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_black_24dp"
+        app:layout_constraintLeft_toRightOf="@+id/al_et1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_et0"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/al_et1"
+        android:layout_marginTop="70dp" >
+
+        <Button
+            android:id="@+id/al_b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="20sp"
+            android:background="#008000"
+
+            android:onClick="Log" />
+
+        <Button
+            android:id="@+id/al_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="20sp"
+            android:onClick="Sign" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+    <EditText
+        android:id="@+id/as_et0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:hint="Create login"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:minWidth="220dp"
+        android:maxWidth="220dp" />
+
+    <EditText
+        android:id="@+id/as_et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Create password"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/as_et0"
+        android:minWidth="220dp"
+        android:maxWidth="220dp" />
+
+    <ImageView
+        android:id="@+id/as_iv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_black_24dp"
+        app:layout_constraintLeft_toRightOf="@+id/as_et1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as_et0"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/as_et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Repeat password"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/as_et1"
+        android:minWidth="220dp"
+        android:maxWidth="220dp" />
+
+    <ImageView
+        android:id="@+id/as_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_black_24dp"
+        app:layout_constraintLeft_toRightOf="@+id/as_et2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as_et1"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/as_et2"
+        android:layout_marginTop="70dp" >
+
+        <Button
+            android:id="@+id/as_b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="20sp"
+            android:onClick="CreateNew" />
+
+        <Button
+            android:id="@+id/as_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear fields"
+            android:textSize="20sp"
+            android:onClick="ClearText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_tv0"
+        android:text="Number of clusters"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_et0"
+        android:hint="Enter positive number"
+        app:layout_constraintLeft_toRightOf="@+id/am_tv0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_tv1"
+        android:text="Number of objects in cluster"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/am_tv0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_et1"
+        android:hint="And here too"
+        app:layout_constraintLeft_toRightOf="@+id/am_tv1"
+        app:layout_constraintTop_toBottomOf="@+id/am_tv0"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_tv2"
+        android:text="Number of features"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/am_et1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="8dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_sb0"
+        android:progress="3"
+        android:min="1"
+        android:max="20"
+        app:layout_constraintTop_toBottomOf="@+id/am_tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_tv3"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/am_sb0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_b0"
+        android:onClick="Analyze"
+        android:text="Start analysis"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/am_tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_lv0"
+        app:layout_constraintTop_toBottomOf="@+id/am_b0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

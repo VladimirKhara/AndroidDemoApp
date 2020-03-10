@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/mm_kmeans"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:title="K-means"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mm_cmeans"
+        android:orderInCategory="3"
+        android:title="C-means" />
+    <item
+        android:id="@+id/mm_hierarchic"
+        android:orderInCategory="2"
+        android:title="Hierarchic">
+        <menu>
+            <item
+                android:id="@+id/agg"
+                android:title="Agglomerative" />
+            <item
+                android:id="@+id/divisive"
+                android:title="Divisive" />
+
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mm_gendata"
+            android:title="Generate Data"
+            android:checked="true" />
+        <item android:id="@+id/mm_importdata"
+            android:title="Import Data" />
+    </group>
+</menu>
