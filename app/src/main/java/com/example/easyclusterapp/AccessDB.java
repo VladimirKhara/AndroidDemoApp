@@ -31,4 +31,5 @@ public class AccessDB extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("drop table if exists " + log_table);
         onCreate(sqLiteDatabase);
     }
+
 }

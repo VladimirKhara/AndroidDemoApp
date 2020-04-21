@@ -27,6 +27,17 @@
 
         </menu>
     </item>
+
+    <item
+        android:id="@+id/mm_settings"
+        android:orderInCategory="3"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/mm_users"
+        android:orderInCategory="4"
+        android:title="Users" />
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/mm_gendata"
@@ -35,4 +46,5 @@
         <item android:id="@+id/mm_importdata"
             android:title="Import Data" />
     </group>
+
 </menu>
