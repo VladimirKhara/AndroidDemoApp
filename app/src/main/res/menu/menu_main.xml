@@ -38,6 +38,16 @@
         android:orderInCategory="4"
         android:title="Users" />
 
+    <item
+        android:id="@+id/mm_calendar"
+        android:orderInCategory="5"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/mm_image"
+        android:orderInCategory="6"
+        android:title="ImageDB" />
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/mm_gendata"

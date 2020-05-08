@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity">
+
+    <Button
+        android:id="@+id/act_image_btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open gallery"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/act_image_iv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:maxHeight="225dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_btn0" />
+
+    <EditText
+        android:id="@+id/act_image_et0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Set name for your image"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_iv0" />
+
+    <Button
+        android:id="@+id/act_image_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save image to local DB"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_et0" />
+
+    <Button
+        android:id="@+id/act_image_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear ImageView"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_btn1" />
+
+    <LinearLayout
+        android:id="@+id/act_image_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_btn2">
+
+        <EditText
+            android:id="@+id/act_image_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter description"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/act_image_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Image From DB"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drop data from db"
+        android:textSize="14sp"
+        android:onClick="deleteData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_image_ll"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

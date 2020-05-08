@@ -37,5 +37,6 @@ public class ClusterSettingsActivity extends AppCompatActivity {
 
             }
         });
+
     }
 }

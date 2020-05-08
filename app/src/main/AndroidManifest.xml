@@ -13,11 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContactsActivity">
+        <activity android:name=".ImageActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         </activity>
-        <activity android:name=".UsersActivity">
+        <activity android:name=".CalendActivity">
         </activity>
-        <activity android:name=".ClusterSettingsActivity" />
+        <activity android:name=".ContactsActivity" />
+        <activity android:name=".UsersActivity"></activity>
+        <activity android:name=".ClusterSettingsActivity"></activity>
         <activity android:name=".SignActivity" />
         <activity android:name=".LogActivity">
             <intent-filter>
@@ -26,8 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

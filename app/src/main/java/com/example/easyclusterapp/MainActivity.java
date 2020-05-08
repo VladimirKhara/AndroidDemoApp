@@ -88,6 +88,14 @@ public class MainActivity extends AppCompatActivity {
                 myInt = new Intent(this,UsersActivity.class);
                 startActivity(myInt);
                 break;
+            case R.id.mm_calendar:
+                myInt = new Intent(this,CalendActivity.class);
+                startActivity(myInt);
+                break;
+            case R.id.mm_image:
+                myInt = new Intent(this, ImageActivity.class);
+                startActivity(myInt);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
